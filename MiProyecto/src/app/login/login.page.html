@@ -1,0 +1,55 @@
+<style>
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Centra el contenido en toda la pantalla */
+  }
+  
+  .login-card {
+    width: 90%;
+    max-width: 400px; /* Evita que sea muy grande */
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .card-img-top {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    display: block;
+  }
+  
+  .form-login ion-input {
+    margin: 10px 0;
+  }
+  
+</style>
+
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="login-container">
+    <ion-card class="login-card">
+      <img src="https://png.pngtree.com/png-vector/20191003/ourmid/pngtree-user-login-or-authenticate-icon-on-gray-background-flat-icon-ve-png-image_1786166.jpg" 
+        class="card-img-top" alt="Login Icon">
+      
+      <ion-card-header>
+        <ion-card-title>Iniciar Sesión</ion-card-title>
+        <!-- <ion-card-subtitle>  </ion-card-subtitle> -->
+      </ion-card-header>
+
+      <ion-card-content>
+        <section class="form-login">
+          <ion-input type="text" placeholder="Usuario" fill="outline"></ion-input>
+          <ion-input type="password" placeholder="Contraseña" fill="outline"></ion-input>
+          <ion-button expand="full">Ingresar</ion-button>
+        </section>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
