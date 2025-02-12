@@ -1,7 +1,7 @@
 import { Component, EnvironmentInjector, inject } from '@angular/core';
 import { IonTabs, IonTabBar, IonTabButton, IonIcon, IonLabel } from '@ionic/angular/standalone';
 import { addIcons } from 'ionicons';
-import { triangle, ellipse, square, bluetooth, heart, infinite } from 'ionicons/icons';
+import { key, bluetooth, heart, infinite } from 'ionicons/icons';
 /* IonItem, IonLabel, IonButton, IonInput, */
 
 @Component({
@@ -14,6 +14,6 @@ export class TabsPage {
   public environmentInjector = inject(EnvironmentInjector);
 
   constructor() {
-    addIcons({ triangle, ellipse, square, bluetooth, heart, infinite});
+    addIcons({ key, bluetooth, heart, infinite });
   }
 }
